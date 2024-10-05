@@ -1,0 +1,8 @@
+package com.riwi.practicaFiltro.application.servicie.generics;
+
+import java.util.Optional;
+
+public interface Create <T>{
+
+    T create(T t);
+}
