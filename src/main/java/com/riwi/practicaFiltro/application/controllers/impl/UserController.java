@@ -22,7 +22,7 @@ import javax.swing.text.html.parser.Entity;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/userp")
+@RequestMapping("/userss")
 
 
 public class UserController implements IUserController {
