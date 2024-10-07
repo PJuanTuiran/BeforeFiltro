@@ -4,6 +4,9 @@ import com.riwi.practicaFiltro.utils.enums.Roles;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.util.List;
+import java.util.Set;
+
 @Entity(name = "user")
 @Getter
 @Setter
@@ -21,5 +24,7 @@ public class UserEntity {
     private String password;
     private String email;
     private Roles rol;
+    @OneToMany(mappedBy = "users")
+    private Set<InscripcionesEntity> inscripciones;
 
 }
